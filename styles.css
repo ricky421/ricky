@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#main {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.collapsible {
+    margin-left: 20px;
+    transition: all 1s;
+    display: none;
+}
+
+.collapsible.expanded {
+    color: inherit;
+    display: block;
+}
+
+.info {
+    font-size: small;
+}
+
+a {
+    color: inherit;
+}

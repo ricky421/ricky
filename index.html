@@ -3,17 +3,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Satdhruti Paul</title>
 </head>
 <body>
-    <h1>Ricky's Profile</h1>
-    <h3>A.K.A Satdhruti Paul</h3>
-    <br>
-    <ol>
-        <li>random thoughts</li>
-        <li>hobbies</li>
-        <li>resume</li>
-        <li>contact</li>
-    </ol>
+    <div id="main">
+        <h1>Ricky's Profile</h1>
+        <h2>A.K.A Satdhruti Paul</h3>
+        <br>
+        <ol>
+            <li>
+                <p onclick="expandThoughts()">random thoughts</p>
+                <div class="collapsible" id="thoughts">
+                    <p class="info">three body problem</p>
+                    <p class="info">optimal memory for a barbershop visit</p>
+                </div>
+            </li>
+            <li>
+                <p onclick="expandHobbies()">hobbies</p>
+                <div class="collapsible" id="hobbies">
+                    <p class="info">i'm probably busy reading fiction, playing my guitar/keyboard (terribly), or trekking in the mountains</p>
+                </div>
+            </li>
+            <li>
+                <p onclick="expandResume()">resume</p>
+                <div class="collapsible" id="resume">
+                    <p class="info"><a href="https://www.youtube.com/watch?v=Sagg08DrO5U" target="_blank">you can find my resume here</a></p>
+                </div>
+            </li>
+            <li>
+                <p onclick="expandContacts()">contacts</p>
+                <div class="collapsible" id="contacts">
+                    <p class="info">Email: satdhrutipaul01@gmail.com</p>
+                    <p class="info">Instagram: oneminsolo</p>
+                </div>
+            </li>
+        </ol>
+    </div>
 </body>
 </html>
